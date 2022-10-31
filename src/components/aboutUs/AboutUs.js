@@ -8,9 +8,9 @@ const AboutUs = () => {
     <section className=' my-40'>
       {/*.................................HEADER(About us).........................................*/}
       <div className='relative w-full h-20   '>
-          <img className= "absolute top-[50%] translate-y-[-50%] w-1/5 left-0 -z-50"  src={require('../../images/img_wireframe.png')} alt="imagebackgound"/>
+          <img className= "absolute top-[50%] translate-y-[-50%] w-1/5 left-0 -z-50"  src={require('../../img/img_wireframe.png')} alt="imagebackgound"/>
           <div className={`${center} w-1/5 z-[-1]`}>
-              <img className={`${center} -z-20`} src={require('../../images/headline.png')} alt="headline"/>
+              <img className={`${center} -z-20`} src={require('../../img/headline.png')} alt="headline"/>
               <p className={`${center} text-[#101FA3] font-bold  text-[62%] sm:text-[80%] md:text-[100%] lg:text-xl xl:text-2xl `}>About us</p>
           </div>
       </div> 
@@ -26,7 +26,7 @@ const AboutUs = () => {
             </div>
             {/* ............................IMAGE CONTENT.............................. */}
             <div className='w-full h-full  col-span-6 flex items-center justify-start '>
-              <img className='w-[80%] h-[80%]' src={require('../../images/teamimage.png')}  />
+              <img className='w-[80%] h-[80%]' src={require('../../img/teamimage.png')}  />
             </div>
         </div>
       </div>
