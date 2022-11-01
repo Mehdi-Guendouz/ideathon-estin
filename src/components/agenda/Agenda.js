@@ -51,7 +51,7 @@ function Agenda() {
     return (
         <section id='agenda' className='font-[whyte]'>
 
-            <div className='flex items-center justify-center h-32 bg-headlineBorder bg-no-repeat bg-center bg-[length:23%]'>
+            <div className='flex items-center justify-center h-32 bg-headlineBorder bg-no-repeat bg-center bg-[length:22%]'>
                 <h1 className='text-[45px] text-center text-purple font-bold'>Agenda</h1>
             </div>
 
