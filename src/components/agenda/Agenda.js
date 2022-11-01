@@ -3,6 +3,8 @@ import arrow from '../../img/arrow.svg'
 import decoration from '../../img/asset 12.svg'
 
 function Agenda() {
+    
+    //dates information to display
     const dayOne = {
         date: 'Thursday, November 24th',
         activities: [
@@ -24,9 +26,12 @@ function Agenda() {
             {time: '03:30pm - 04:00pm', event: 'Ending Ceremony'},
         ]
     }
+
+    //state variables declaration
     const [day, setDay] = useState(dayOne);
     const [isDayOneActive, setIsDayOneActive] = useState(true);
 
+    //handleClick function to toggle between the days
     function handleClick(e){
         if(e.target.id === 'day-2' && isDayOneActive){
             setIsDayOneActive(false);
@@ -67,20 +72,23 @@ function Agenda() {
                 text-2xl
                 '>
                     <img className='w-20 absolute top-[-2rem] right-[-2.5rem]' src={decoration} alt="asset 12" />
-                    <h3 id='day' className='w-2/3 lg:w-max py-6 font-bold text-1xl lg:text-3xl'>
+
+                    <h3 id='day' className='w-2/3 lg:w-max pt-6 font-bold text-1xl lg:text-3xl'>
                         <img src={arrow} alt="arrow" className='inline-block mr-3 w-6 lg:w-10'/>
                         {day.date}
                     </h3>
+
                     <div className='h-full w-full pl-[7%] pb-8 flex flex-col items-start justify-around'>
                         {dateElements}
                     </div>
                 </div>
 
                 <div id='day-2' 
-                className={`relative w-max h-fit mb-auto mt-40 px-[7%] pb-1 font-bold text-5xl cursor-pointer 
-                flex items-center justify-center ${!isDayOneActive && 'highlight'}`} 
-                onClick={handleClick}>
-                    Day 2</div>
+                    className={`relative w-max h-fit mb-auto mt-40 px-[7%] pb-1 font-bold text-5xl cursor-pointer 
+                    flex items-center justify-center ${!isDayOneActive && 'highlight'}`} 
+                    onClick={handleClick}>
+                        Day 2
+                </div>
             </div>
         </section>
     )
