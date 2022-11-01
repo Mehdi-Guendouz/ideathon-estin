@@ -4,8 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'headlineBorder': "url('headline-border.png')",
-        'highlight': 'linear-gradient( to top, rgba(253, 206, 39, 0.85) 50%, transparent 50% )'
+        'headlineBorder': "url('./img/headline border.svg')",
+        'highlight': 'linear-gradient( to top, rgba(253, 206, 39, 0.85) 60%, transparent 60% )'
       },
       colors: {
         'purple': "#101FA3",
