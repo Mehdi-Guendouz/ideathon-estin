@@ -1,0 +1,185 @@
+@font-face {
+    font-family: 'Whyte';
+    src: url('../../assets/font/Whyte-Medium.ttf');
+    
+
+}
+
+@font-face {
+    font-family: 'Whyte2';
+    src: url('../../assets/font/Whyte-Bold.ttf');
+    
+
+}
+.svgg{
+    position: relative;
+
+}
+.svgg::before{
+    content: url(../../assets/images/Vector\ 2.png);
+    position: absolute;
+    top: 20px;
+    left: 15px;
+}
+
+.first-div{
+    background-image: url(../../assets/images/grid.png);
+    height: 100vh;
+}
+
+.logo{
+    width: fit-content;
+    margin: 0 auto;
+    padding-top:15px ; 
+}  
+
+.text-div{
+    font-family: whyte2;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top:15px;
+}
+
+.ideatech{
+    font-family: whyte;
+    width: fit-content;
+    margin: 0 auto;
+    padding-bottom: 20px ;
+}
+
+#ideate{
+   position: relative;
+   z-index: 1;
+   
+}
+
+
+#ideate::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    opacity: 0.85;
+    background: rgb(68, 114, 241,0.75);
+    z-index: -1;
+   
+
+
+}
+
+#technicate{
+        
+    position: relative;
+    z-index: 1;
+     
+}
+
+#technicate::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background:rgb(255, 199, 0, 0.85);
+    opacity: 0.85;
+    z-index: -1;
+    
+}
+
+.button{
+    width: 350px;
+    height: 56px;
+    background: #000000;
+    border-radius: 12px;
+    color: white;
+    font-size: 32px;
+    font-family: whyte;
+}
+
+
+.register-div{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: fit-content;
+    margin: 0 auto;
+    padding-top: 50px;
+}
+
+.first-animation{
+    top: 160px;
+    left: 90px;
+}
+
+
+
+
+/*************************************************** first animation **************************************************/
+
+ @-webkit-keyframes animate-svg-stroke-1 {
+    0% {
+      stroke-dashoffset: 1055.021240234375px;
+      stroke-dasharray: 1055.021240234375px;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 1055.021240234375px;
+    }
+  }
+  
+  @keyframes animate-svg-stroke-1 {
+    0% {
+      stroke-dashoffset: 1055.021240234375px;
+      stroke-dasharray: 1055.021240234375px;
+    }
+  
+    100% {
+      stroke-dashoffset: 0;
+      stroke-dasharray: 1055.021240234375px;
+    }
+  }
+  
+  .svg-elem-1 {
+    -webkit-animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+            animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both;
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+
+  .timebox {
+    width: 141.38px;
+    height: 144.1px;
+    background-image: url(../../assets/images/toppng\ 1.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+align-items: center;
+flex-direction: column;
+
+
+}
+.time-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-family: whyte2;
+    font-size: 30px;
+    
+    
+}
