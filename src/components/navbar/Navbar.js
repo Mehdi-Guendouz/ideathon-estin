@@ -1,7 +1,7 @@
 import './Navbar.css';
 
-import kharbich from '../../assets/images/kharbich.png';
-import logo2     from '../../assets/images/logo 2.png';
+// import kharbich from '../../assets/images/kharbich.png';
+// import logo2     from '../../assets/images/logo 2.png';
 
 
 function Navbar() {
@@ -17,7 +17,7 @@ function Navbar() {
     <div className="hidden   w-full md:block md:w-auto" id="navbar-default">
       <ul className="flex flex-col p-4 mt-4  bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
         <li className='px-3'>
-        <a> <img className='logo1 block mt-[-12px]  pb-[-20px] pr-14 pl-3' src={logo2} /></a> 
+        <a> <img className='logo1 block mt-[-12px]  pb-[-20px] pr-14 pl-3'  /></a> 
         </li>
         <li className='px-3 '>
           <a href="#" className="block pt-[10px] pb-[-20px] pr-14 pl-3  text-black   text-[22px] " aria-current="page">home</a>
@@ -36,7 +36,7 @@ function Navbar() {
         </li>
         
           
-        <a> <img className='block  pt-[0px] pb-[-20px] pr-14 pl-3' src={kharbich} /></a>
+        <a> <img className='block  pt-[0px] pb-[-20px] pr-14 pl-3'  /></a>
         
            
       </ul>

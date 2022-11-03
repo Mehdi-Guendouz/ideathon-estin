@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'Whyte';
-    src: url('../../assets/font/Whyte-Medium.ttf');
+    src: url('../../font/Whyte-Medium.ttf');
     
 
 }
 
 @font-face {
     font-family: 'Whyte2';
-    src: url('../../assets/font/Whyte-Bold.ttf');
+    src: url('../../font/Whyte-Bold.ttf');
     
 
 }
@@ -16,14 +16,14 @@
 
 }
 .svgg::before{
-    content: url(../../assets/images/Vector\ 2.png);
+    /* content: url(../../assets/images/Vector\ 2.png); */
     position: absolute;
     top: 20px;
     left: 15px;
 }
 
 .first-div{
-    background-image: url(../../assets/images/grid.png);
+    /* background-image: url(../../assets/images/grid.png); */
     height: 100vh;
 }
 
@@ -164,7 +164,7 @@
   .timebox {
     width: 141.38px;
     height: 144.1px;
-    background-image: url(../../assets/images/toppng\ 1.png);
+    /* background-image: url(../../assets/images/toppng\ 1.png); */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -180,6 +180,4 @@ flex-direction: column;
     width: 100%;
     font-family: whyte2;
     font-size: 30px;
-    
-    
 }

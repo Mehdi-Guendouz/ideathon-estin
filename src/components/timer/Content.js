@@ -1,6 +1,6 @@
 import './Content.css';
-import logo from '../../assets/images/logo.png';        
-import vector from '../../assets/images/Vector 2.png';
+// import logo from '../../assets/images/logo.png';        
+// import vector from '../../assets/images/Vector 2.png';
 
 
 
@@ -36,7 +36,7 @@ function Content() {
 
         <div className='first-div ' >
         <div className='second-div  '>
-        <img className='logo ' src={logo} />
+        {/* <img className='logo ' src={logo} /> */}
         <div className='text-div'>                         
         <p className='text-[45px] ideatech'>Ideatech</p>
         <p className='text-[65px] pl-[110px]'>where we <span id='ideate'> ideate</span></p>
