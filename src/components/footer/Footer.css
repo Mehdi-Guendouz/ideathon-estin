@@ -1,0 +1,146 @@
+footer{
+  position: absolute;
+  bottom: 0;
+  height: 15rem;
+  width: 100%;
+  background-color:#FFFFF8;
+  text-align:center;
+
+  margin-top: auto;
+}
+.center{
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 150%;
+}
+.container{
+position: relative;
+padding-left: 20px;
+
+}
+.centered {
+ 
+position: absolute;
+  top: 20%;
+  left: 50%;
+
+}
+
+.parent-wrapper {
+  align-self: center;
+  height: 100px;
+  width: 100%;
+
+}
+.parent {
+  display: flex;
+  font-size: 0;
+  flex-wrap: wrap;
+
+}
+
+.logopng{
+  display: inline-block;
+  margin-left: auto ;
+ margin-top: 21px;
+  flex-grow: 0.05;
+  height: 50px;
+  width: 30px;
+  margin-top: auto;
+}
+.fb{
+  display: inline-block;
+  margin-left: auto ;
+  margin-right: 20px ;
+  margin-top: 60px;
+  flex-grow: 0.01;
+  height: 30px;
+  width: 30px;
+  transition: 0.5s;
+}
+.fb:hover{
+ 
+  height: 41px;
+  width: 41px;
+  transition: 0.5s;
+}
+.ig{
+  display: inline-block;
+  margin-right: 20px ;
+  margin-left: 20px;
+  margin-top: 60px;
+  flex-grow: 0.01;
+  height: 30px;
+  width: 30px;
+  transition: 0.5s;
+}
+.ig:hover{
+ 
+  height: 41px;
+  width: 41px;
+  transition: 0.5s;
+}
+.in{
+  display: inline-block;
+  margin-top: 60px;
+  margin-left: 20px;
+  flex-grow: 0.01;
+  height: 30px;
+  width: 30px;
+  transition: 0.5s;
+}
+.in:hover{
+ 
+  height: 41px;
+  width: 41px;
+  transition: 0.5s;
+}
+.byte{
+  display: inline-block;
+  margin-left: auto ;
+  margin-right: auto ;;
+  flex-grow: 0.05;
+  height: 60px;
+  width: 30px;
+ margin-top: 50px;
+  
+}
+.text{
+  display: inline-block;
+  color: #776F6F;
+  flex-grow: 10;
+  height: 400px;
+  width: 400px;
+  font-family: 'Inter';
+font-style: normal;
+
+}
+
+
+.bord{
+  position: absolute;
+  width: 101%;
+  height: 40px;
+  top:-42px;
+  left:0 ;
+  background:transparent url('../../img/wiw2.png');
+  background-size: 800px 40px;
+  border: 0px solid transparent;
+  }
+
+.bord#bord1{
+  z-index:1000;
+  opacity: 1;
+  bottom : 0px;
+  animation: animateWave 30s linear infinite;
+
+}
+@keyframes animateWave {
+  0%{
+     background-position-x: 2000px;
+  }
+  100%{
+    background-position-x: 0px;
+  }
+}

@@ -1,0 +1,22 @@
+
+/* div.container > h1::before {
+    content: url('../../assets/images/Untitled_Artwork\ 4\ 1\ \(Traced\).svg');
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+div.container > h1::after {
+    content: url('../../assets/images/Untitled_Artwork\ 4\ 1\ \(Traced\)-1.svg');
+    position: absolute;
+    top: 0;
+    right: 0;
+} */
+
+/* div.image::before {
+    content: url('../../assets/images/yellow\ and\ black.svg');
+    position: absolute;
+    top: 259px;
+    left: 385px;
+} */
+

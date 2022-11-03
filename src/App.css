@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Whyte";
+    src: url("./font/Whyte-Book.ttf");
+}
+
+body {
+    background: url("./img/grid.png") top left repeat;
+    font-family: 'Whyte';
+}
