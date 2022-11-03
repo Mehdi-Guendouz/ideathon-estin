@@ -18,17 +18,14 @@
     box-sizing: border-box;
 }
 
-#day-1.highlight::before, #day-2.highlight::before {
+.highlight::before{
     content: " ";
     display: block;
     height: 70%;
-    width: 100%;
     margin-left: -3px;
     margin-right: -3px;
-    position: absolute;
-    background: rgba(253, 206, 39, 0.85);
+    background-color: rgba(253, 206, 39, 0.85);
     bottom: -2px;
-    left: 1px;
     padding: 10px 3px 3px 10px;
     z-index: -1;
 }
