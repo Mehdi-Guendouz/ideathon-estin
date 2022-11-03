@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import SpeakersSection from "./components/SpeakersSection"
+import SpeakersSection from "./components/speakers/SpeakersSection"
 function App() {
   return (
     <div className="App">
