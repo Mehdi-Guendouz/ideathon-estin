@@ -1,13 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 @font-face {
-    font-family: "Whyte";
-    src: url("./font/Whyte-Book.ttf");
+  font-family: "Whyte";
 }
 
 body {
-    background: url("./img/grid.png") top left repeat;
-    font-family: 'Whyte';
+  background: url("./images/grid.png") top left repeat;
+  font-family: 'Whyte';
 }
+.swiper {
+  width: 240px;
+  height: 320px;
+}
+
+.swiper-slide, .slide {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 22px;
+  font-weight: 500;
+  color: #fff;
+  background: #F2CED0;
+border: 1.5px solid #000000;
+box-shadow: 7px 5px 18px rgba(0, 0, 0, 0.25);
+width: 14rem !important;
+height: 14rem !important;
+}
+#Speaker-info{
+  justify-content: flex-start;
+  gap:0.5rem;
+  width: 13rem !important;
+height: 14rem !important;
+box-shadow: none !important;
+transform: translate(0.3rem,-15.3rem)   ; 
+padding: 2rem 0.75rem;
+}
+#SpeakersSlider div#title{
+  background-image: url("./Resources/svg\ ideatech/headline%20border.svg");
+} 

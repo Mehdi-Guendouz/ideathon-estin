@@ -1,10 +1,11 @@
-import './App.css'
-import {About_event} from './components/index'
+import logo from './logo.svg';
+import './App.css';
+import SpeakersSection from "./components/SpeakersSection"
 function App() {
   return (
-    <>
-      <About_event />
-    </>
+    <div className="App">
+      <SpeakersSection/>
+    </div>
   );
 }
 
