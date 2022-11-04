@@ -2,31 +2,39 @@ import './Content.css';
 import logo from '../../img/logo.png';        
 
 
+const zero = "00"
 
-
-const countdown = () => {
-    const countDate = new Date("november 17 , 2022 00:00:00").getTime();
+const countdown=()=> {
+    const countDate = new Date("november 4 , 2022 13:45:00").getTime();
     const now = new Date().getTime();
-    const gap = countDate - now ;
-
-    const second = 1000;
-    const minute = 60 * second;
-    const hour = minute * 60;
-    const day = hour * 24;
-
-    const textDay = Math.floor( gap / day);
-    const textHour = Math.floor((gap % day)/ hour);
-    const textMinute = Math.floor((gap % hour ) / minute);
-    const textSecond = Math.floor((gap % minute) / second);
-
-    document.getElementById("day").innerText=textDay;
-    document.getElementById("hour").innerText=textHour;
-    document.getElementById("min").innerText=textMinute;
-    document.getElementById("sec").innerText=textSecond;
+    let gap = countDate - now ;
+    if(gap > 0){
+        let second = 1000;
+        let minute = 60 * second;
+        let hour = minute * 60;
+        let day = hour * 24;
+    
+        let textDay = Math.floor( gap / day);
+        let textHour = Math.floor((gap % day)/ hour);
+        let textMinute = Math.floor((gap % hour ) / minute);
+        let textSecond = Math.floor((gap % minute) / second);
+    
+        document.getElementById("day").innerText=textDay;
+        document.getElementById("hour").innerText=textHour;
+        document.getElementById("min").innerText=textMinute;
+        document.getElementById("sec").innerText=textSecond;
+        
+    }else{
+        document.getElementById("day").innerText= zero;
+        document.getElementById("hour").innerText= zero;
+        document.getElementById("min").innerText= zero;
+        document.getElementById("sec").innerText= zero;
+    }
 
 }
-setInterval(countdown,1000)
 
+
+setInterval(countdown,1000)
 
 
 
