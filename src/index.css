@@ -1,3 +1,35 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Whyte';
+    src: url('./font/Whyte-Regular.eot');
+    src: local('Whyte Regular'), local('Whyte-Regular'),
+        url('./font/Whyte-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./font/Whyte-Regular.woff2') format('woff2'),
+        url('./font/Whyte-Regular.woff') format('woff'),
+        url('./font/Whyte-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.highlight::before{
+    content: " ";
+    display: block;
+    height: 70%;
+    margin-left: -3px;
+    margin-right: -3px;
+    background-color: rgba(253, 206, 39, 0.85);
+    bottom: -2px;
+    padding: 10px 3px 3px 10px;
+    z-index: -1;
+}
+
+
+
