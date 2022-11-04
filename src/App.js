@@ -16,6 +16,7 @@ function App() {
       <AboutUs/>
       <Sponsors/>
       {/* <Footer/> */}
+
     </div>
   );
 }
