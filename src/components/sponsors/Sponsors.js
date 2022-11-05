@@ -13,7 +13,7 @@ const Sponsors = () =>  {
             <img className={`${center}`} src={require('../../img/headline.png')} alt="headline"/>
             <p className="text-[#101FA3] text-[45px] font-bold ">Sponsors</p>
           </div>
-          <div class="grid grid-cols-2 gap-[2rem] gap-x-4 w-full items-center justify-items-center py-[3rem]">
+          <div class="grid sm:grid-cols-2 grid-cols-1 gap-[2rem] gap-x-4 w-full items-center justify-items-center py-[3rem]">
             <div className=' bg-transparent relative'>
               <img className="" src={require('../../img/headlineb.png')} alt="imagebackgound"/>
               <img className={`${center} -z-10`} src={yellowzigzag} alt="imagebackgound"/>

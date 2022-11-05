@@ -1,0 +1,45 @@
+.sidebar-animation{
+    animation: sidebar 2s ease-in;
+}
+
+.sidebar-btn-animation{
+    animation: btnsidebar 2s;
+}
+
+@keyframes sidebar {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 25%;
+    }
+    50%{
+        opacity: 50%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes btnsidebar {
+    0%{
+        opacity: 0%;
+    }
+    25%{
+        opacity: 15%;
+    }
+    50%{
+        opacity: 50%;
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+    70%{
+        transform: rotate(5deg);
+    }
+    100%{
+        opacity: 100%;
+        transform: rotate(-5deg);
+    }
+}

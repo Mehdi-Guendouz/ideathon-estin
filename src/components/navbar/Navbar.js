@@ -1,42 +1,104 @@
+import {useState} from 'react'
 import './Navbar.css';
-
 import kharbich from '../../img/kharbich.png';
-import logo2     from '../../img/logo 2.png';
+import bytLogo     from '../../img/byte.png';
+import menucircel     from '../../img/Vector.png';
+import menu     from '../../img/menu.png';
+import close     from '../../img/close.png';
+
 
 
 function Navbar() {
+
+  const [bmenu, setbmenu] = useState(false)
+
+  const changeStateMenu = ()=>{
+    setbmenu((prev)=>!prev)
+  }
+
+  const Menu = ()=>{
+    return(
+      <div className='flex items-center justify-center relative' onClick={changeStateMenu}>
+        <img src={menu}  alt='menu'/>
+        <img src={menucircel}  alt='menu' className='absolute w-[34px] h-[34px] ' />
+      </div>
+    )
+  }
+
+  const Close = ()=>{
+    return(
+      <div className='flex items-center justify-center relative' onClick={changeStateMenu}>
+        <img src={close}  alt='menu'/>
+        <img src={menucircel}  alt='menu' className='absolute w-[44px] h-[34px] '  />
+      </div>
+    )
+  }
+
+  const SideBar = () =>{
+    return (
+      <div className='w-full flex flex-col items-center justify-center z-20 bg-[#FFFEDC] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[2rem] '>
+        <ul className="capitalize pt-2 text-center text-[25px] font-medium sidebar-animation">
+          <li className='mt-2'>
+            <a href="#" className="" aria-current="page">home</a>
+          </li>
+          <li className='mt-4'>
+            <a href="#" className="">about us</a>
+          </li>
+          <li className='mt-4'>
+            <a href="#" className="" >speakers</a>
+          </li>
+          <li className='mt-4'>
+            <a href="#" className="" >agenda</a>
+          </li>
+          <li className='mt-4'>
+            <a href="#" className="" >sponsors</a>
+          </li>     
+        </ul>
+        <div className='mt-4 flex items-center justify-center py-5'>
+          <a className='capitalize text-[18px] px-4 py-1 bg-black text-white rounded-[7px] sidebar-btn-animation'>register now</a> 
+        </div>
+      </div>
+    )
+  }
+
     return (
       
-<nav className="bg-white border-gray-200 px-2 sm:px-4  rounded dark:bg-white w-full">
-  <div className="container flex  flex-wrap justify-center items-center mx-auto w-full ">
+<nav className={` border-gray-200  sm:px-4  rounded  w-full ${bmenu ? 'bg-[#fffedc]' : 'bg-white'}`}>
+  <div className=" flex  flex-wrap justify-center items-center mx-auto w-full py-4">
     
-    <button data-collapse-toggle="navbar-default" type="button" className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
-      <span className="sr-only">Open main menu</span>
-      <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
-    </button>
+    <div className='w-full flex items-center justify-between md:hidden  relative'>
+      <div className='px-4'>
+          <a className=' cursor-pointer'><img className='w-[30px] h-[40px]' src={bytLogo} /></a> 
+      </div>
+      {bmenu && <SideBar/>}
+      <div className='flex items-center justify-center relative px-4'>
+        {bmenu == false && <Menu/>}
+        {bmenu && <Close />}
+      </div>
+    </div>
     <div className="hidden w-full md:flex items-center justify-around  " id="navbar-default">
       <div>
-        <a className=' cursor-pointer'><img className='' src={logo2} /></a> 
+        <a className=' cursor-pointer'><img className='lg:w-[50px] lg:h-[60px] md:w-[40px] md:h-[50px]' src={bytLogo} /></a> 
       </div>
       <ul className="flex flex-col p-4 mt-4  bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
-        <li className='px-3 '>
-          <a href="#" className=" capitalize  text-black   text-[22px] " aria-current="page">home</a>
+        <li className=' '>
+          <a href="#" className=" capitalize  text-black   xl:text-[22px] lg:text-[18px] " aria-current="page">home</a>
         </li>
         <li >
-          <a href="#" className="ml-10 capitalize text-black  text-[22px]  ">about us</a>
+          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black  xl:text-[22px] lg:text-[18px]  ">about us</a>
         </li>
         <li>
-          <a href="#" className="ml-10 capitalize text-black  text-[22px] " >speakers</a>
+          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black  xl:text-[22px] lg:text-[18px] " >speakers</a>
         </li>
         <li>
-          <a href="#" className="ml-10 capitalize text-black   text-[22px] " >agenda</a>
+          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black   xl:text-[22px] lg:text-[18px] " >agenda</a>
         </li>
         <li>
-          <a href="#" className="ml-10 capitalize text-black text-[22px] " >sponsors</a>
+          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black xl:text-[22px] lg:text-[18px] " >sponsors</a>
         </li>     
       </ul>
       <div>
-        <a className='cursor-pointer'><img className='' src={kharbich} /></a>
+        <a className='cursor-pointer'><img className='lg:w-[120px] lg:h-[50px] md:w-[100px] md:h-[40px]' src={kharbich} /></a>
       </div>
     </div>
   </div>
