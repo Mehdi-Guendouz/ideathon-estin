@@ -1,0 +1,50 @@
+.sand-watch{
+    animation: rotation 2s infinite;
+}
+
+.content-animation{
+    animation: apeare 5s ease-in-out;
+}
+
+.date-animation{
+    animation: apeare 2s ease-in;
+}
+
+.arrow-animation{
+    animation: arrow 1s infinite;
+}
+
+@keyframes arrow {
+    50%{
+        transform: rotate(30deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes rotation {
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+@keyframes apeare {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 50;
+    }
+    100%{
+        opacity: 100;
+    }
+    /* 100%{
+        opacity: ;
+    } */
+}

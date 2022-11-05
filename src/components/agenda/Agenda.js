@@ -2,6 +2,7 @@ import {useState} from 'react'
 import arrow from '../../img/arrow.svg'
 import dashedLineBackground from '../../img/Untitled_Artwork 4 1 (Traced)-2.svg'
 import decoration from '../../img/asset 12.svg'
+import './agenda.css'
 
 function Agenda() {
     
@@ -42,7 +43,7 @@ function Agenda() {
             setIsDayOneActive(true);
             setDay(dayOne);
         }
-        console.log('isDayOneActive: ', isDayOneActive)
+        // console.log('isDayOneActive: ', isDayOneActive)
     }
 
     //creating the date DOM elements
@@ -74,14 +75,14 @@ function Agenda() {
                 border-solid border-2 border-black
                 text-base lg:text-2xl
                 '>
-                    <img className='w-14 lg:w-20 absolute top-[-1rem] right-[-1.5rem] lg:top-[-2rem] lg:right-[-2.5rem]' src={decoration} alt="asset 12" />
+                    <img className='w-14 lg:w-20 absolute top-[-1rem] right-[-1.5rem] lg:top-[-2rem] lg:right-[-2.5rem] sand-watch' src={decoration} alt="asset 12" />
 
                     <h3 id='day' className=' lg:w-2/3 lg:w-max pl-1 pr-[40px] py-3 lg:pt-6 font-bold text-center text-lg lg:text-3xl'>
-                        <img src={arrow} alt="arrow" className='inline-block mr-3 w-6 lg:w-10'/>
-                        {day.date}
+                        <img src={arrow} alt="arrow" className='inline-block mr-3 w-6 lg:w-10 arrow-animation'/>
+                        <span className='date-animation'>{day.date}</span>
                     </h3>
 
-                    <div className='h-full w-full pl-[7%] pb-4 lg:pb-8 flex flex-col items-start justify-around'>
+                    <div className='h-full w-full pl-[7%] pb-4 lg:pb-8 flex flex-col items-start justify-around content-animation'>
                         {dateElements}
                     </div>
                 </div>

@@ -10,7 +10,7 @@ import t_asset from '../../img/T\ asset.svg'
 
 const Container = () => {
 	return (
-		<div className='mt-20'>
+		<div className='pt-5 md:mt-8'>
 			<div className='container relative mx-auto md:pt-[122.44px] md:pb-[100.3px]'>
                 <div className='relative'>
                     <h1 className='text-center md:text-7xl font-[700] text-[28px]'>IDEATECH 2022</h1>
@@ -25,7 +25,7 @@ const Container = () => {
                     </div>
                 </div>
                 <div className='flex justify-center flex-wrap-reverse relative md:mt-[59.5px] mt-[47px] md:items-center'>
-                    <div className='image relative'>
+                    <div className='image relative mt-8 xl:mt-0'>
                         <img className='md:w-[486px] w-[336px]' src={vector8} alt=""/>
                         <img src={asset6} alt="" className='absolute md:top-[7px] md:left-[26px] md:w-[106px] w-[73.28px] top-[8px] left-[41px]'/>
                     </div>
