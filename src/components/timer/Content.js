@@ -1,34 +1,6 @@
 import './Content.css';
-import logo from '../../img/logo.png';        
-
-
-
-
-const countdown = () => {
-    const countDate = new Date("november 17 , 2022 00:00:00").getTime();
-    const now = new Date().getTime();
-    const gap = countDate - now ;
-
-    const second = 1000;
-    const minute = 60 * second;
-    const hour = minute * 60;
-    const day = hour * 24;
-
-    const textDay = Math.floor( gap / day);
-    const textHour = Math.floor((gap % day)/ hour);
-    const textMinute = Math.floor((gap % hour ) / minute);
-    const textSecond = Math.floor((gap % minute) / second);
-
-    document.getElementById("day").innerText=textDay;
-    document.getElementById("hour").innerText=textHour;
-    document.getElementById("min").innerText=textMinute;
-    document.getElementById("sec").innerText=textSecond;
-
-}
-setInterval(countdown,1000)
-
-
-
+import logo from '../../img/logo.png';    
+import Count from './Count';    
 
 function Content() {
     return (
@@ -47,18 +19,7 @@ function Content() {
                         <button className='button'>register now</button>
                     </div>
                     <div className="time-div pt-7">
-                        <div className=" timebox days">
-                            <h1 id="day">00</h1><h1>Day</h1>
-                        </div>
-                        <div className=" timebox  hours">
-                            <h1 id="hour">00</h1><h1>hours</h1>
-                        </div>
-                        <div className=" timebox mins">
-                            <h1 id="min">00</h1><h1>min</h1>
-                        </div>
-                        <div className=" timebox secs">
-                            <h1 id="sec">00</h1><h1>sec</h1>
-                        </div>
+                       <Count />
                     </div>
                 </div>
             </div>
