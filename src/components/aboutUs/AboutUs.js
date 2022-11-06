@@ -21,7 +21,7 @@ const AboutUs = () => {
         <div className='w-full grid grid-cols-12 gap-4 '>
           {/* .............................PARAGRAPH CONTENT.......................... */}
             <div className='w-full h-full col-span-12  md:col-span-6 flex items-center justify-center'>
-              <p className='text-start text-xl lg:text-2xl xl:text-3xl text-bold mx-4 md:mr-0 md:ml-[20%] mt-6 md:mt-[10%] relative '>
+              <p className='text-start text-xl lg:text-2xl xl:text-3xl text-bold mx-4 md:mr-0 md:ml-[20%] mt-0 md:mt-[10%]  '>
               ByteCraft is scientific club that is hosted by (ESTIN Amizour) and that was officially opened to the world on October
                25th 2022, its aim is to make events, conferences and workshops unrelated and especially related to tech, to increase 
                their capacities and give them opportunities to exploit them, ByteCraft has been and still one of the most effective 
