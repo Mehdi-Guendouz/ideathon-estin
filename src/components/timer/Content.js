@@ -5,7 +5,7 @@ import logo from '../../img/logo.png';
 const zero = "00"
 
 const countdown=()=> {
-    const countDate = new Date("november 4 , 2022 13:45:00").getTime();
+    const countDate = new Date("november 17 , 2022 13:45:00").getTime();
     const now = new Date().getTime();
     let gap = countDate - now ;
     if(gap > 0){

@@ -1,18 +1,16 @@
 footer{
-  position: absolute;
-  bottom: 0;
-  height: 15rem;
-  width: 100%;
-  background-color:#FFFFF8;
-  text-align:center;
-
-  margin-top: auto;
+  /* position: relative;
+  height: 15rem; */
+  /* width: 100%; */
+  /* background-color:#FFFFF8; */
+  /* background-image: url(../../img/footer.svg); */
+  background: url(../../img/footer.svg) no-repeat center;
 }
 .center{
   display: block;
 margin-left: auto;
 margin-right: auto;
-width: 150%;
+/* width: 150%; */
 }
 .container{
 position: relative;
@@ -26,37 +24,37 @@ position: absolute;
   left: 50%;
 
 }
-
+/* 
 .parent-wrapper {
   align-self: center;
   height: 100px;
   width: 100%;
 
-}
-.parent {
+} */
+/* .parent {
   display: flex;
   font-size: 0;
   flex-wrap: wrap;
 
-}
+} */
 
 .logopng{
-  display: inline-block;
+  /* display: inline-block;
   margin-left: auto ;
  margin-top: 21px;
-  flex-grow: 0.05;
-  height: 50px;
-  width: 30px;
-  margin-top: auto;
+  flex-grow: 0.05; */
+  /* height: 50px;
+  width: 30px; */
+  /* margin-top: auto; */
 }
 .fb{
   display: inline-block;
   margin-left: auto ;
-  margin-right: 20px ;
-  margin-top: 60px;
+  /* margin-right: 20px ;
+  margin-top: 60px; */
   flex-grow: 0.01;
-  height: 30px;
-  width: 30px;
+  /* height: 30px;
+  width: 30px; */
   transition: 0.5s;
 }
 .fb:hover{
@@ -67,12 +65,12 @@ position: absolute;
 }
 .ig{
   display: inline-block;
-  margin-right: 20px ;
+  /* margin-right: 20px ;
   margin-left: 20px;
-  margin-top: 60px;
-  flex-grow: 0.01;
-  height: 30px;
-  width: 30px;
+  margin-top: 60px; */
+  /* flex-grow: 0.01; */
+  /* height: 30px;
+  width: 30px; */
   transition: 0.5s;
 }
 .ig:hover{
@@ -83,11 +81,11 @@ position: absolute;
 }
 .in{
   display: inline-block;
-  margin-top: 60px;
-  margin-left: 20px;
+  /* margin-top: 60px;
+  margin-left: 20px; */
   flex-grow: 0.01;
-  height: 30px;
-  width: 30px;
+  /* height: 30px;
+  width: 30px; */
   transition: 0.5s;
 }
 .in:hover{
@@ -97,21 +95,21 @@ position: absolute;
   transition: 0.5s;
 }
 .byte{
-  display: inline-block;
+  /* display: inline-block;
   margin-left: auto ;
   margin-right: auto ;;
-  flex-grow: 0.05;
-  height: 60px;
-  width: 30px;
- margin-top: 50px;
+  flex-grow: 0.05; */
+  /* height: 60px;
+  width: 40px; */
+ /* margin-top: 50px; */
   
 }
 .text{
   display: inline-block;
   color: #776F6F;
-  flex-grow: 10;
-  height: 400px;
-  width: 400px;
+  /* flex-grow: 10; */
+  /* height: 400px;
+  width: 400px; */
   font-family: 'Inter';
 font-style: normal;
 
