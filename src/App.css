@@ -5,6 +5,7 @@
 body {
   background: url("./images/grid.png") top left repeat;
   font-family: 'Whyte';
+  overflow-x: hidden;
 }
 .swiper {
   width: 240px;
@@ -36,3 +37,24 @@ padding: 2rem 0.75rem;
 #SpeakersSlider div#title{
   background-image: url("./Resources/svg\ ideatech/headline%20border.svg");
 } 
+@media only screen and (max-width: 600px) {
+  .swiper-slide, .slide {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    background: #F2CED0;
+  border: 1.5px solid #000000;
+  box-shadow: 7px 5px 18px rgba(0, 0, 0, 0.25);
+  width: 14rem !important;
+  height: 14rem !important;
+  }
+  #arrow{
+    left:20vw !important
+  }
+}
+#arrow{
+  left:40vw
+}
