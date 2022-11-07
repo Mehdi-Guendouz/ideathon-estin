@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion"
 import { EffectCards } from "swiper";
 import Speakers from "./data/speakers"
 import './speaker.css'
-import {  isMobile } from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 const DEG = [0, 0.266667, 0.533333, 0.8]
 const Compas = () => {
@@ -22,7 +22,7 @@ const Usb = () => {
   </svg>
 }
 const Arrow = () => {
-  return <svg className=" w-fit absolute h-60 top-3/4 translate-x-[5rem] rotate-[-90deg] translate-y-[-10rem]" id="arrow"  width="318" height="338" viewBox="0 0 318 338" fill="none" xmlns="http://www.w3.org/2000/svg">
+  return <svg className=" w-fit absolute h-60 top-3/4 translate-x-[5rem] rotate-[-90deg] translate-y-[-10rem]" id="arrow" width="318" height="338" viewBox="0 0 318 338" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M115.148 62.8063C82.4689 93.8998 64.9998 140.748 70.8852 185.872C80.3021 269.701 166.502 317.85 246.108 299.076C199.494 313.013 144.791 304.565 106.165 273.354C50.8171 230.465 38.7746 149.587 68.4753 88.2708C75.8225 72.6328 85.5021 58.2012 97.1863 45.465L115.148 62.8063Z" fill="#898686" />
     <path d="M59.0149 64.5187C50.4787 60.6967 49.1153 49.612 56.5348 43.9178C57.5078 43.1711 58.4939 42.4409 59.4927 41.7277C60.1157 41.2828 60.7937 40.8524 61.5568 40.9129C61.9406 40.9434 62.3336 41.0028 62.7463 40.9306L65.0605 40.7967L78.8785 39.0222L110.413 31.395C118.879 29.3472 127.314 34.8804 128.808 43.4617L129.295 46.2634C129.609 48.0678 129.592 49.9143 129.244 51.7125L123.107 83.4248L122.58 92.9205C122.428 94.2683 121.721 97.7046 121.642 99.323C121.635 99.4811 121.65 99.6382 121.656 99.7963C121.68 100.384 121.302 100.885 120.861 101.276C119.479 102.501 116.424 105.211 116.219 105.421C111.055 111.587 102.155 110.533 98.9529 103.155C98.3372 101.737 97.7422 100.308 97.1683 98.8717C96.8707 98.1267 96.421 97.4102 96.3753 96.6094C96.375 96.6027 96.3746 96.5961 96.3743 96.5894C96.3356 95.801 96.7028 95.0539 96.8921 94.2876C97.3387 92.4799 97.679 90.6472 97.9111 88.7991L99.3183 80.1477L103.47 54.8248C104.141 50.7306 109.202 49.1653 112.068 52.1658C114.931 55.164 113.148 60.1508 109.032 60.6482C95.5068 62.2827 75.4563 64.7202 68.0114 65.5294L65.7701 65.8878C64.9482 66.0316 64.2723 66.6244 63.4531 66.395C61.9601 65.8004 60.4804 65.1749 59.0149 64.5187Z" fill="#898686" />
   </svg>
@@ -43,9 +43,9 @@ const NextButton = (props) => {
 }
 const PervButton = (props) => {
   return <>
-      <svg className="cursor-pointer	h-7 sm:h-10 z-20" onClick={() => { props.Perv() }} width="47" height="52" viewBox="0 0 47 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M41.5513 5C36.8803 10.6639 24.6306 22.447 12.9998 24.2688C19.4808 28.2393 34.2645 38.3175 41.5513 46.8659" stroke="black" stroke-width="9" stroke-linecap="round" />
-      </svg>
+    <svg className="cursor-pointer	h-7 sm:h-10 z-20" onClick={() => { props.Perv() }} width="47" height="52" viewBox="0 0 47 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M41.5513 5C36.8803 10.6639 24.6306 22.447 12.9998 24.2688C19.4808 28.2393 34.2645 38.3175 41.5513 46.8659" stroke="black" stroke-width="9" stroke-linecap="round" />
+    </svg>
   </>
 }
 const EmptyDot = () => {
@@ -92,7 +92,7 @@ export default function SpeakersSection() {
   const [Speaker, setSpeaker] = React.useState(0)
   const swiperRef = useRef(null);
   const [isHoverredOn, setIsHoveredOn] = React.useState(0)
-  const [Next,setNext]=React.useState(false)
+  const [Next, setNext] = React.useState(false)
 
 
   const setStyle = () => {
@@ -102,9 +102,9 @@ export default function SpeakersSection() {
     setSpeaker(Speakers[id])
   }
 
-  
+
   return (
-    <div id="SpeakersSlider" className="mx-auto  h-[120vh] sm:h-[130vh] md:h-[110vh] w-11/12 flex justify-start overflow-hidden flex-col  pt-9  sm:w-3/5 gap-16 relative">
+    <div id="SpeakersSlider" className="mx-auto  h-[120vh] sm:h-[130vh] md:h-[120vh] w-11/12 flex justify-start overflow-hidden flex-col  pt-9  sm:w-3/5 gap-16 relative">
       <Casque />
       <Compas />
       <Usb />
@@ -115,8 +115,8 @@ export default function SpeakersSection() {
           className="w-full bg-no-repeat bg-contain	bg-center	bg-origin-padding flex items-center justify-center max-h-40	h-16 "
         >
           <div className={`flex items-center justify-center w-full relative`} data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
-              <img className={`${center}  -z-20`} src={require('../../img/headline.png')} alt="headline"/>
-              <p className={` text-[#101FA3] font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl `}>Speakers</p>
+            <img className={`${center}  -z-20`} src={require('../../img/headline.png')} alt="headline" />
+            <p className={` text-[#101FA3] font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl `}>Speakers</p>
           </div>
         </div>
         <div id="SliderDots"
@@ -139,15 +139,15 @@ export default function SpeakersSection() {
         </div>
 
         <div className="flex justify-between items-center h-fit">
-                  {!isMobile ? <>
-                    <PervButton Perv={() => {
-            swiperRef.current?.slidePrev();
-            setSpeakerInfos(swiperRef.current.snapIndex)
-          }}></PervButton>
-                  </>:null}
+          {!isMobile ? <>
+            <PervButton Perv={() => {
+              swiperRef.current?.slidePrev();
+              setSpeakerInfos(swiperRef.current.snapIndex)
+            }}></PervButton>
+          </> : null}
 
 
-          <Swiper
+          <Swiper style={{ zoom: "1.4" }}
             effect={"cards"}
             modules={[EffectCards]}
             className="mySwiper"
@@ -157,20 +157,22 @@ export default function SpeakersSection() {
             }}
             navigation
 
-            onSlideChange={(slide) => {setStyle()
+            onSlideChange={(slide) => {
+              setStyle()
               setSpeakerInfos(slide.snapIndex)
               setIsHoveredOn(0)
               console.log(slide.snapIndex)
             }}
           >
             {Speakers.map((person) => (
-              <SwiperSlide  >
+              <SwiperSlide>
                 <div id="Speaker-img" className=" h-3/4 m-4 over overflow-hidden"
                   onMouseEnter={() => { setIsHoveredOn(1) }}
                   onMouseLeave={() => { setIsHoveredOn(0) }}
-                  onClick={()=>{
-                    setIsHoveredOn(isHoverredOn===1 ? 0 : 1)
-                  console.log(isHoverredOn)}}
+                  onClick={() => {
+                    setIsHoveredOn(isHoverredOn === 1 ? 0 : 1)
+                    console.log(isHoverredOn)
+                  }}
                 >
                   <img className="object-cover" src={require(`${person.img}`)} alt="" />
                 </div>
@@ -183,8 +185,8 @@ export default function SpeakersSection() {
                 className="slide"
                 variants={StickyNoteTransition}
                 initial="initial"
-                animate={isHoverredOn === 1   ? "animate" : "null"}
-                exit={isHoverredOn === 1  ? "exit" : "null"}
+                animate={isHoverredOn === 1 ? "animate" : "null"}
+                exit={isHoverredOn === 1 ? "exit" : "null"}
               >
                 {Speaker != null ? <>
                   <span className="text-left text-base"
@@ -213,11 +215,11 @@ export default function SpeakersSection() {
           </Swiper>
           {!isMobile ? <>
             <NextButton Next={() => {
-            swiperRef.current?.slideNext()
-            setSpeakerInfos(swiperRef.current.snapIndex)
+              swiperRef.current?.slideNext()
+              setSpeakerInfos(swiperRef.current.snapIndex)
 
-          }}></NextButton>
-                  </>:null}
+            }}></NextButton>
+          </> : null}
 
         </div>
       </> : <></>}

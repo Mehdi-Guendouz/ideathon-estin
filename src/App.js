@@ -14,18 +14,17 @@ import 'aos/dist/aos.css';
 
 
 function App() {
-  
+
   return (
     <div className="App overflow-hidden scroll-smooth">
-      <Navbar/>
-      <Content/>
-      <AboutEvent/>
-      <AboutUs/>
-      <SpeakersSection/>
-      <Agenda/>
-      <Sponsors/>
-      <Footer/>
-
+      <Navbar />
+      <Content />
+      <AboutEvent />
+      <AboutUs />
+      <SpeakersSection />
+      <Agenda />
+      <Sponsors />
+      <Footer />
     </div>
   );
 }
