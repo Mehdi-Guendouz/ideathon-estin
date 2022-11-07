@@ -8,10 +8,15 @@ import Sponsors from './components/sponsors/Sponsors';
 import Footer from './components/footer/Footer';
 import Agenda from './components/agenda/Agenda';
 import SpeakersSection from './components/speakers/Speakers';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 function App() {
+  
   return (
-    <div className="App overflow-hidden">
+    <div className="App overflow-hidden scroll-smooth">
       <Navbar/>
       <Content/>
       <AboutEvent/>

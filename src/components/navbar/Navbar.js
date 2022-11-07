@@ -39,19 +39,19 @@ function Navbar() {
       <div className='w-full flex flex-col items-center justify-center z-20 bg-[#FFFEDC] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[2rem] '>
         <ul className="capitalize pt-2 text-center text-[25px] font-medium sidebar-animation">
           <li className='mt-2'>
-            <a href="#" className="" aria-current="page">home</a>
+            <a href="#home" className="" aria-current="page">home</a>
           </li>
           <li className='mt-4'>
-            <a href="#" className="">about us</a>
+            <a href="#about" className="">about us</a>
           </li>
           <li className='mt-4'>
-            <a href="#" className="" >speakers</a>
+            <a href="#SpeakersSlider" className="" >speakers</a>
           </li>
           <li className='mt-4'>
-            <a href="#" className="" >agenda</a>
+            <a href="#agenda" className="" >agenda</a>
           </li>
           <li className='mt-4'>
-            <a href="#" className="" >sponsors</a>
+            <a href="#sponsors" className="" >sponsors</a>
           </li>     
         </ul>
         <div className='mt-4 flex items-center justify-center py-5'>
@@ -82,19 +82,19 @@ function Navbar() {
       </div>
       <ul className="flex flex-col p-4 mt-4  bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white ">
         <li className=' '>
-          <a href="#" className=" capitalize  text-black   xl:text-[22px] lg:text-[18px] " aria-current="page">home</a>
+          <a href="#home" className=" capitalize  text-black   xl:text-[22px] lg:text-[18px] " aria-current="page">home</a>
         </li>
         <li >
-          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black  xl:text-[22px] lg:text-[18px]  ">about us</a>
+          <a href="#about" className="xl:ml-10 lg:ml-5 capitalize text-black  xl:text-[22px] lg:text-[18px]  ">about us</a>
         </li>
         <li>
-          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black  xl:text-[22px] lg:text-[18px] " >speakers</a>
+          <a href="#SpeakersSlider" className="xl:ml-10 lg:ml-5 capitalize text-black  xl:text-[22px] lg:text-[18px] " >speakers</a>
         </li>
         <li>
-          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black   xl:text-[22px] lg:text-[18px] " >agenda</a>
+          <a href="#agenda" className="xl:ml-10 lg:ml-5 capitalize text-black   xl:text-[22px] lg:text-[18px] " >agenda</a>
         </li>
         <li>
-          <a href="#" className="xl:ml-10 lg:ml-5 capitalize text-black xl:text-[22px] lg:text-[18px] " >sponsors</a>
+          <a href="#sponsors" className="xl:ml-10 lg:ml-5 capitalize text-black xl:text-[22px] lg:text-[18px] " >sponsors</a>
         </li>     
       </ul>
       <div>

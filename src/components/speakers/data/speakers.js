@@ -1,24 +1,19 @@
 const Speakers=[
     {
-        "name" :"SAIDA Haithem",
-        "occupation":"Fullstack web developer",
-        "description":"lorem Ipsum is simply dummy information regarding the role of the"
+        "name" :"MERZOUG Islem",
+        "occupation":"Fullstack web-dev",
+        "description":"Web/Salesforce Professional with Salesforce Platform experience, E-Payment Integration, Connect REST API",
+        "img": "./data/profileImg/Islem-MERZOUG.png"
     },{
-        "name" :"ATTAR Djamel",
-        "occupation":"UI/UX designer",
-        "description":"lorem Ipsum is simply dummy information regarding the role of the"
+        "name" :"BENELMADJAT Mohamed Naim",
+        "occupation":"",
+        "description":"Video content creator, Freelance and entrepreneurship ",
+        "img": "./data/profileImg/Naim-Keys.jpeg"
     },{
-        "name" :"BOULENACHE Anis",
-        "occupation":"Backend web developer",
-        "description":"lorem Ipsum is simply dummy information regarding the role of the"
-    },{
-        "name" :"GUERBATI Salah khirredine",
-        "occupation":"???? web developer",
-        "description":"lorem Ipsum is simply dummy information regarding the role of the"
-    },{
-        "name" :"GUERBATI Salah khirredine",
-        "occupation":"???? web developer",
-        "description":"lorem Ipsum is simply dummy information regarding the role of the"
+        "name" :"IZOUNTAR Abderrahim",
+        "occupation":"",
+        "description":"Graphic design, marketing, web-dev, entrepreneurship, freelance",
+        "img": "./data/profileImg/Abderrahim-IZOUNTAR.JPG"
     }
 ]
 export default Speakers

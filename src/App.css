@@ -10,4 +10,5 @@
 body {
     background: url("./img/grid.png") top left repeat;
     font-family: 'Whyte';
+    scroll-behavior: smooth;
 }

@@ -52,14 +52,14 @@ function Agenda() {
     ));
     
     return (
-        <section id='agenda' className='relative font-[whyte]'>
+        <section id='agenda' className='relative font-[whyte]' >
             
             {window.innerWidth < 550 &&  <img className='absolute w-screen h-[1000px] top-[-5%]' src={dashedLineBackground} alt="Dashed Line Background"/>}
-            <div className='flex items-center justify-center h-32 bg-headlineBorder bg-no-repeat bg-center bg-[length:50%] lg:bg-[length:22%]'>
+            <div className='flex items-center justify-center h-32 bg-headlineBorder bg-no-repeat bg-center bg-[length:50%] lg:bg-[length:22%]' data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
                 <h1 className='text-[30px] lg:text-[45px] text-center text-purple font-bold'>Agenda</h1>
             </div>
 
-            <div className='grid grid-cols-2 lg:grid-cols-[1fr_5fr] grid-rows-2 mx-[10%] lg:mx-[51px] lg:mx-40 py-16 lg:py-[10rem]'>
+            <div className='grid grid-cols-2 lg:grid-cols-[1fr_5fr] grid-rows-2 mx-[10%] lg:mx-[51px]  py-16 lg:pt-[2rem] lg:pb-[10rem]'>
                 
                 <div
                 className={`relative flex justify-center before:absolute before:w-16 lg:before:w-[100%] lg:before:left-[3px] lg:w-max h-fit lg:mt-auto mb-3 lg:mb-40 lg:mr-[60px] lg:pb-1 font-bold text-2xl lg:text-5xl  
@@ -77,7 +77,7 @@ function Agenda() {
                 '>
                     <img className='w-14 lg:w-20 absolute top-[-1rem] right-[-1.5rem] lg:top-[-2rem] lg:right-[-2.5rem] sand-watch' src={decoration} alt="asset 12" />
 
-                    <h3 id='day' className=' lg:w-2/3 lg:w-max pl-1 pr-[40px] py-3 lg:pt-6 font-bold text-center text-lg lg:text-3xl'>
+                    <h3 id='day' className=' lg:w-2/3  pl-1 pr-[40px] py-3 lg:pt-6 font-bold text-center text-lg lg:text-3xl'>
                         <img src={arrow} alt="arrow" className='inline-block mr-3 w-6 lg:w-10 arrow-animation'/>
                         <span className='date-animation'>{day.date}</span>
                     </h3>

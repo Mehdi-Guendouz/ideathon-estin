@@ -1,7 +1,4 @@
-body{
-    background-image: url("/src/img/grid.png");
-    height: 100vh;
-}
+
 .center{
     display: block;
   margin-left: auto;
