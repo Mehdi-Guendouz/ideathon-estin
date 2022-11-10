@@ -8,7 +8,7 @@ const Count = () => {
           const [seconds,setsecond]= useState("0");
 
       const countdown = () => {
-        const countDate = new Date("november 17 , 2022 00:00:00").getTime();
+        const countDate = new Date("november 18 , 2022 08:30:00").getTime();
         const now = new Date().getTime();
         const gap = countDate - now ;
   
@@ -56,16 +56,25 @@ const Count = () => {
      return (
       <div className="time-div flex items-center justify-center w-full md:text-[30px] text-[18px]  xl:gap-[5rem] lg:gap-[3rem] md:gap-[2rem]  pt-7">
       <div className=" timebox md:w-[141.38px] md:h-[144.1px] w-[88px] h-[78px] days">
+        <div className='flex items-center justify-center flex-col translate-y-2 md:translate-y-0'>
           <h1 id="day">{days < 10 ? "0"+days : days }</h1><h1>Day</h1>
+        </div>
+          
       </div>
       <div className=" timebox md:w-[141.38px] md:h-[144.1px] w-[88px] h-[78px] hours">
-          <h1 id="hour">{hours < 10 ? "0"+hours : hours }</h1><h1>hours</h1>
+          <div className='flex items-center justify-center flex-col translate-y-2 md:translate-y-0'>
+            <h1 id="hour">{hours < 10 ? "0"+hours : hours }</h1><h1>hours</h1>
+          </div>
       </div>
       <div className=" timebox md:w-[141.38px] md:h-[144.1px] w-[88px] h-[78px] mins">
+        <div className='flex items-center justify-center flex-col translate-y-2 md:translate-y-0'>
           <h1 id="min">{minutes < 10 ? "0"+minutes : minutes }</h1><h1>min</h1>
+        </div>
       </div>
       <div className=" timebox md:w-[141.38px] md:h-[144.1px] w-[88px] h-[78px] secs">
+        <div className='flex items-center justify-center flex-col translate-y-2 md:translate-y-0'>
           <h1 id="sec">{seconds < 10 ? "0"+seconds : seconds }</h1><h1>sec</h1>
+        </div>
       </div>
 </div>
     

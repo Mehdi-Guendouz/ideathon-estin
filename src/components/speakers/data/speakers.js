@@ -1,19 +1,27 @@
 const Speakers = [
     {
+        "name": "LAKEHAL Ahmed Amine",
+        "occupation": "Founder's Associate at Starfounders(France)",
+        "description": "Motion Design and Visual elements in a Business context",
+        "img": "./data/profileImg/ahmad.png"
+    },
+    {
+        "name": "BENMAHIEDDINE Houssem",
+        "occupation": "Graphic Brand,Ui/UX Designer,& Digital content creator",
+        "description": "Building a successful brand",
+        "img": "./data/profileImg/houssem.png"
+    },
+    {
         "name": "MERZOUG Islem",
-        "occupation": "Fullstack web-dev",
-        "description": "Web/Salesforce Professional with Salesforce Platform experience, E-Payment Integration",
-        "img": "./data/profileImg/Islem-MERZOUG.png"
-    }, {
-        "name": "BENELMADJAT Mohamed Naim",
-        "occupation": "",
-        "description": "Video content creator, Freelance and entrepreneurship ",
-        "img": "./data/profileImg/Naim-Keys.jpeg"
+        "occupation": "Fullstack web-dev and Web/Salesforce",
+        "description": "Salesforce: the global leader CRM",
+        "img": "./data/profileImg/merzoug.png"
     }, {
         "name": "IZOUNTAR Abderrahim",
-        "occupation": "",
-        "description": "Graphic design, marketing, web-dev, entrepreneurship, freelance",
-        "img": "./data/profileImg/Abderrahim-IZOUNTAR.JPG"
+        "occupation": "Graphic designer, web developer, entrepreneur",
+        "description": "The requirement for your business promotion",
+        "img": "./data/profileImg/izountar.png"
     }
+    
 ]
 export default Speakers

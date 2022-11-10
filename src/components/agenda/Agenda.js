@@ -10,22 +10,28 @@ function Agenda() {
     const dayOne = {
         date: 'Thursday, November 24th',
         activities: [
-            {time: '05:00pm - 05:50pm', event: 'Check-in'},
-            {time: '06:00pm - 07:00pm', event: 'Opening Ceremony'},
-            {time: '07:00pm - 07:30pm', event: 'Ice breaking'},
-            {time: '07:30pm - 08:00pm', event: 'Ideathon Presentaton'},
-            {time: '08:00pm - 09:00pm', event: 'Ideathon Launch'},
-            {time: '09:00pm - 10:00pm', event: 'Dinner'},
-            {time: '10:00pm - 12:00am', event: 'Hackathon'}
+            {time: '08:00 - 08:30', event: 'Check-in'},
+            {time: '08:30 - 09:00', event: 'Opening Ceremony'},
+            {time: '09:00 - 10:00', event: 'IdeaTech Presentation'},
+            {time: '10:00 - 12:30', event: 'Competition'},
+            {time: '12:30 - 14:00', event: 'Lunch'},
+            {time: '14:00 - 16:30', event: 'Competition'},
+            {time: '16:30 - 17:30', event: 'Coffee Break'},
+            {time: '19:30 - 20:30', event: 'Dinner'},
+            {time: '20:30 - 00:00', event: 'Competition'},
+            {time: '00:00 - 00:30', event: 'Midnight Break'},
+            {time: '01:00', event: 'Competition'}
         ]
     }
     const dayTwo = {
         date: 'Friday, November 25th',
         activities: [
-            {time: '12:00am - 02:00pm', event: 'End of Hackathon'},
-            {time: '02:00pm - 03:00pm', event: 'Presentatons'},
-            {time: '03:00pm - 03:30pm', event: 'Winners Announcement'},
-            {time: '03:30pm - 04:00pm', event: 'Ending Ceremony'},
+            {time: '07:00 - 08:00', event: 'Berakfast'},
+            {time: '08:00 - 12:00', event: 'Competition'},
+            {time: '12:00', event: 'Submission'},
+            {time: '12:10', event: 'Lunch'},
+            {time: '13:00', event: 'Presentation'},
+            {time: '17:00', event: 'Closing Ceremony'}
         ]
     }
 
@@ -51,13 +57,15 @@ function Agenda() {
         <p key={activity.time} className='font-normal'><span className='font-bold'>{activity.time}:</span> {activity.event}</p>
     ));
     
+    const center = "absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]";
     return (
-        <section id='agenda' className='relative font-[whyte]' >
+        <section id='agenda' className='relative font-[whyte] flex items-center justify-center flex-col' >
             
             {window.innerWidth < 550 &&  <img className='absolute w-screen h-[1000px] top-[-5%]' src={dashedLineBackground} alt="Dashed Line Background"/>}
-            <div className='flex items-center justify-center h-32 bg-headlineBorder bg-no-repeat bg-center bg-[length:50%] lg:bg-[length:22%]' data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
-                <h1 className='text-[30px] lg:text-[45px] text-center text-purple font-bold'>Agenda</h1>
-            </div>
+            <div className='container flex items-center justify-center  relative' data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
+            <img className={`${center}`} src={require('../../img/headline.png')} alt="headline"/>
+            <p className="text-[#101FA3] text-[45px] font-bold ">Agenda</p>
+          </div>
 
             <div className='grid grid-cols-2 lg:grid-cols-[1fr_5fr] grid-rows-2 mx-[10%] lg:mx-[51px]  py-16 lg:pt-[2rem] lg:pb-[10rem]'>
                 
