@@ -8,7 +8,7 @@ function Agenda() {
     
     //dates information to display
     const dayOne = {
-        date: 'Thursday, November 24th',
+        date: 'Thursday, November 18th',
         activities: [
             {time: '08:00 - 08:30', event: 'Check-in'},
             {time: '08:30 - 09:00', event: 'Opening Ceremony'},
@@ -24,7 +24,7 @@ function Agenda() {
         ]
     }
     const dayTwo = {
-        date: 'Friday, November 25th',
+        date: 'Friday, November 19th',
         activities: [
             {time: '07:00 - 08:00', event: 'Berakfast'},
             {time: '08:00 - 12:00', event: 'Competition'},

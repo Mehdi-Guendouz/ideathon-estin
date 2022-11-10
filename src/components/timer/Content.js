@@ -14,7 +14,7 @@ function Content() {
         <div className='first-div' id='#home'>
             <div className='second-div relative'>
                 <img className='m-auto pt-5 h-[212px] w-[190px]' src={logo} />
-                <img className='absolute right-0 top-0 -z-10 translate-x-[4rem] translate-y-[-10rem] md:translate-x-0 md:translate-y-[-5rem] lg:translate-y-0' src={kharbichYlw} />
+                <img className='absolute right-0 top-0 -z-10 translate-x-[4rem] translate-y-[-10rem] hidden md:block md:translate-x-0 md:translate-y-[-5rem] lg:translate-y-0' src={kharbichYlw} />
                 <div className='text-div w-full flex items-center justify-center flex-col gap-1 md:gap-0'>                         
                     <p className='lg:text-[45px] sm:text-[35px] text-[26px] ideatech font-bold '>Ideatech</p>
                     <p className='lg:text-[65px] sm:text-[55px] text-[24px] m-auto'>where we<span id='ideate'> ideate</span></p>
