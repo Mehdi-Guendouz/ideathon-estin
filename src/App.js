@@ -23,7 +23,7 @@ function App() {
       <AboutUs />
       <SpeakersSection />
       <Agenda />
-      {/* <Sponsors /> */}
+      <Sponsors />
       <Footer />
     </div>
   );

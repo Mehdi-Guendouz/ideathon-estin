@@ -7,33 +7,33 @@ import './agenda.css'
 function Agenda() {
     
     //dates information to display
-    const dayOne = {
-        date: 'Friday, November 18th',
-        activities: [
-            {time: '08:00 - 08:30', event: 'Check-in'},
-            {time: '08:30 - 09:00', event: 'Opening Ceremony'},
-            {time: '09:00 - 10:00', event: 'IdeaTech Presentation'},
-            {time: '10:00 - 12:30', event: 'Competition'},
-            {time: '12:30 - 14:00', event: 'Lunch'},
-            {time: '14:00 - 16:30', event: 'Competition'},
-            {time: '16:30 - 17:30', event: 'Coffee Break'},
-            {time: '19:30 - 20:30', event: 'Dinner'},
-            {time: '20:30 - 00:00', event: 'Competition'},
-            {time: '00:00 - 00:30', event: 'Midnight Break'},
-            {time: '01:00', event: 'Competition'}
-        ]
-    }
-    const dayTwo = {
-        date: 'Thursday, November 19th',
-        activities: [
-            {time: '07:00 - 08:00', event: 'Berakfast'},
-            {time: '08:00 - 12:00', event: 'Competition'},
-            {time: '12:00', event: 'Submission'},
-            {time: '12:10', event: 'Lunch'},
-            {time: '13:00', event: 'Presentation'},
-            {time: '17:00', event: 'Closing Ceremony'}
-        ]
-    }
+    // const dayOne = {
+    //     date: 'Friday, November 18th',
+    //     activities: [
+    //         {time: '08:00 - 08:30', event: 'Check-in'},
+    //         {time: '08:30 - 09:00', event: 'Opening Ceremony'},
+    //         {time: '09:00 - 10:00', event: 'IdeaTech Presentation'},
+    //         {time: '10:00 - 12:30', event: 'Competition'},
+    //         {time: '12:30 - 14:00', event: 'Lunch'},
+    //         {time: '14:00 - 16:30', event: 'Competition'},
+    //         {time: '16:30 - 17:30', event: 'Coffee Break'},
+    //         {time: '19:30 - 20:30', event: 'Dinner'},
+    //         {time: '20:30 - 00:00', event: 'Competition'},
+    //         {time: '00:00 - 00:30', event: 'Midnight Break'},
+    //         {time: '01:00 - 07:00', event: 'Competition'}
+    //     ]
+    // }
+    // const dayTwo = {
+    //     date: 'Thursday, November 19th',
+    //     activities: [
+    //         {time: '07:00 - 08:00', event: 'Berakfast'},
+    //         {time: '08:00 - 12:00', event: 'Competition'},
+    //         {time: '12:00', event: 'Submission'},
+    //         {time: '12:10', event: 'Lunch'},
+    //         {time: '13:00', event: 'Presentation'},
+    //         {time: '17:00', event: 'Closing Ceremony'}
+    //     ]
+    // }
     const days=[
         {
             day:'one',
@@ -44,13 +44,14 @@ function Agenda() {
                 {time: '09:00 - 10:00', event: 'IdeaTech Presentation'},
                 {time: '10:00 - 12:30', event: 'Competition'},
                 {time: '12:30 - 14:00', event: 'Lunch'},
-                {time: '14:00 - 16:30', event: 'Competition'},
+                {time: '14:00 - 15:30', event: 'Competition'},
                 {time: '15:30 - 16:30', event: 'Mentoring Session'},
                 {time: '16:30 - 17:30', event: 'Coffee Break'},
+                {time: '17:30 - 19:30', event: 'Competition'},
                 {time: '19:30 - 20:30', event: 'Dinner'},
                 {time: '20:30 - 00:00', event: 'Competition'},
                 {time: '00:00 - 00:30', event: 'Midnight Break'},
-                {time: '01:00', event: 'Competition'}
+                {time: '01:00 - 07:00', event: 'Competition'}
             ]
         },
         {
@@ -72,15 +73,15 @@ function Agenda() {
             date: 'Friday & Thursday',
             activities: [
                 {time: 'Friday 18th November', event: ''},
-                {time: '09:00 - 11:00', event: 'the global leader CRM'},
+                {time: '09:00 - 11:00', event: 'Salesforce'},
                 {time: '09:00 - 11:00', event: 'Required skills and tools to promote your product/business'},
                 {time: '09:00 - 11:00', event: 'How to build a successful brand'},
-                {time: '02:00 - 04:00', event: 'the global leader CRM.'},
+                {time: '02:00 - 04:00', event: 'Salesforce.'},
                 {time: '02:00 - 05:00', event: '(Conference) Freelance in Algeria as a field and a mindset'},
                 {time: 'Saturday 19th November', event: ''},
-                {time: '9:00 - 11:00', event: 'the global leader CRM'},
+                {time: '9:00 - 11:00', event: 'Salesforce'},
                 {time: '9:30 - 11:30', event: 'The importance of Audio Visual communication for growth'},
-                {time: '9:00 - 11:00', event: 'skills and tools to promote your product/ business'}
+                {time: '9:00 - 11:00', event: 'Required skills and tools to promote your product/ business'}
             ]
         },
 
