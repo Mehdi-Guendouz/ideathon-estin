@@ -7,7 +7,7 @@ const Sponsors = () =>  {
   return(
       <div className='relative font-whyte' id='sponsors'>
         <img class="absolute top-0 translate-y-[-5.5rem] w-full" src={require('../../img/line.png')} alt="lined"/>
-        <div className='w-full mt-8'>
+        <div className='w-full mt-8 flex items-center justify-center flex-col'>
           <div className='container flex items-center justify-center  relative' data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
             <img className={`${center}`} src={require('../../img/headline.png')} alt="headline"/>
             <p className="text-[#101FA3] text-[45px] font-bold ">Sponsors</p>

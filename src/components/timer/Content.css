@@ -43,6 +43,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
+    transform: translateX(15px);
     width: 100%;
     height: 40px;
     opacity: 0.85;
@@ -50,6 +51,8 @@
     z-index: -1;
     animation: animehighlight 2s;
 }
+
+
 
 @keyframes animehighlight {
     0%{
@@ -80,6 +83,7 @@
     z-index: -1;
     animation: animehighlight 2s;
 }
+
 
 .button{
     border-radius: 12px;
@@ -136,8 +140,8 @@
   
   
   .svg-elem-1 {
-    -webkit-animation: animate-svg-stroke-1 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both ;
-            animation: animate-svg-stroke-1 1.5s cubic-bezier(0.47, 0, 0.745, 0.715) 1s both infinite;
+    -webkit-animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both ;
+            animation: animate-svg-stroke-1 1s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both ;
   }
   
   
@@ -159,4 +163,18 @@
     /* width: 100%; */
     font-family: whyte2;
     /* font-size: 30px; */
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    #ideate::before{
+        height: 15px;
+        transform: translateX(5px);
+    }
+
+    #technicate::before{
+        height: 15px;
+    }
+  
 }

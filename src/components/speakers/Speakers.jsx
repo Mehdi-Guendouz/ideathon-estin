@@ -104,7 +104,7 @@ export default function SpeakersSection() {
 
 
   return (
-    <div id="SpeakersSlider" className="mx-auto  h-[120vh] sm:h-[130vh] md:h-[120vh] w-11/12 flex justify-start overflow-hidden flex-col  pt-9  sm:w-3/5 gap-16 relative">
+    <div id="SpeakersSlider" className="mx-auto h-[140vh] sm:h-fit sm:p-10 sm:pb-40 w-11/12 flex justify-start overflow-hidden flex-col  pt-9  sm:w-3/5 gap-16 relative">
       <Casque />
       <Compas />
       <Usb />
@@ -114,14 +114,13 @@ export default function SpeakersSection() {
         <div id="title"
           className="w-full bg-no-repeat bg-contain	bg-center	bg-origin-padding flex items-center justify-center max-h-40	h-16 "
         >
-          <div className={`flex items-center justify-center w-full relative`} data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
-            <img className={`${center}  -z-20`} src={require('../../img/headline.png')} alt="headline" />
-            <p className={` text-[#101FA3] font-bold text-lg sm:text-xl lg:text-xl xl:text-2xl `}>Speakers</p>
+          <div className='container flex items-center justify-center  relative' data-aos="zoom-out" data-aos-duration='1000' data-aos-delay='100'>
+            <img className={`${center}`} src={require('../../img/headline.png')} alt="headline"/>
+            <p className="text-[#101FA3] text-[45px] font-bold ">Speakers</p>
           </div>
         </div>
         <div id="SliderDots"
-          className="flex items-center justify-center gap-6 w-full max-h-20 h-fit"
-        >
+          className="flex items-center justify-center gap-6 w-full max-h-20 h-fit">
           {Speakers.map((person) => (
             <>
               {swiperRef.current == null || swiperRef.current.snapIndex === Speakers.indexOf(person) ? <>
@@ -147,7 +146,7 @@ export default function SpeakersSection() {
           </> : null}
 
 
-          <Swiper style={{ zoom: "1.4" }}
+          <Swiper style={{ zoom: "1.2" }}
             effect={"cards"}
             modules={[EffectCards]}
             className="mySwiper"
@@ -174,7 +173,7 @@ export default function SpeakersSection() {
                     console.log(isHoverredOn)
                   }}
                 >
-                  <img className="object-cover" src={require(`${person.img}`)} alt="" />
+                  <img className="object-cover w-[400px] translate-y-[-35px]" src={require(`${person.img}`)} alt="" />
                 </div>
 
               </SwiperSlide>

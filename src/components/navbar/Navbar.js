@@ -54,8 +54,8 @@ function Navbar() {
             <a href="#sponsors" className="" >sponsors</a>
           </li>     
         </ul>
-        <div className='mt-4 flex items-center justify-center py-5'>
-          <a className='capitalize text-[18px] px-4 py-1 bg-black text-white rounded-[7px] sidebar-btn-animation'>register now</a> 
+        <div className='mt-4 flex items-center justify-center py-5' >
+          <a className='capitalize text-[18px] px-4 py-1 bg-black text-white rounded-[7px] sidebar-btn-animation' target="_blank" href='https://tripetto.app/run/LGPU8M4ZCM' rel="noopener noreferrer">register now</a> 
         </div>
       </div>
     )
@@ -98,7 +98,7 @@ function Navbar() {
         </li>     
       </ul>
       <div>
-        <a className='cursor-pointer'><img className='lg:w-[120px] lg:h-[50px] md:w-[100px] md:h-[40px]' src={kharbich} /></a>
+        <a className='cursor-pointer' target="_blank" href='https://tripetto.app/run/LGPU8M4ZCM' rel="noopener noreferrer"><img className='lg:w-[120px] lg:h-[50px] md:w-[100px] md:h-[40px]' src={kharbich} /></a>
       </div>
     </div>
   </div>
