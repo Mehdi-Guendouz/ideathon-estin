@@ -21,6 +21,21 @@ const Speakers = [
         "occupation": "Graphic designer, web developer, entrepreneur",
         "description": "The requirement for your business promotion",
         "img": "./data/profileImg/izountar.png"
+    },{
+        "name": "RAHIM Samy",
+        "occupation": "",
+        "description": "Graphic and UI/UX designer cs student at ESTIN",
+        "img": "./data/profileImg/izountar.png"
+    },{
+        "name": "KHENFOUF Ayoub",
+        "occupation": "",
+        "description": "Graphic and UI/UX designer cs student at ESI Alger",
+        "img": "./data/profileImg/izountar.png"
+    },{
+        "name": "OUAL Mohamed Anis",
+        "occupation": "",
+        "description": "Graphic designer Digital content creater at Gossradio",
+        "img": "./data/profileImg/izountar.png"
     }
     
 ]
