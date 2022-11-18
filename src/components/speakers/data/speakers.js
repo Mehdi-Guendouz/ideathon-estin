@@ -25,17 +25,17 @@ const Speakers = [
         "name": "RAHIM Samy",
         "occupation": "",
         "description": "Graphic and UI/UX designer cs student at ESTIN",
-        "img": "./data/profileImg/izountar.png"
+        "img": "./data/profileImg/samy.png"
     },{
         "name": "KHENFOUF Ayoub",
         "occupation": "",
         "description": "Graphic and UI/UX designer cs student at ESI Alger",
-        "img": "./data/profileImg/izountar.png"
+        "img": "./data/profileImg/ayoub.png"
     },{
         "name": "OUAL Mohamed Anis",
         "occupation": "",
         "description": "Graphic designer Digital content creater at Gossradio",
-        "img": "./data/profileImg/izountar.png"
+        "img": "./data/profileImg/anis.png"
     }
     
 ]
